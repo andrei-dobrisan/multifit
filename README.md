@@ -14,7 +14,7 @@ https://dobrisan.uk/multifit/Li_Lehane_paper.zip
 
 Unzip and then run the MATLAB script *multifit_analysis.m* which is found in the included *code* folder
 
-To update probfit at any time just run:
+To update multifit at any time just run:
 
 ```
 multifit('update')
