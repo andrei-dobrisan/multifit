@@ -59,5 +59,7 @@ value_moment_meas = [other_points.. 0 0]; % the threshold value is in this varia
 [err_abs_moment err_rel_moment] = [other_points; Inf Inf]; % Inf sets the inequality up as greater than, -Inf as smaller than
 ```
 
-All of the above features are illustred in the worked Li_Lehane_paper. The brief summary above is intended for expansion in the near future as the method is further developed.
+All of the above features are illustred in the worked Li_Lehane_paper. 
+
+The brief summary above is intended for expansion in the near future as the method is further developed.
 For any help please contact us at ad622@eng.cam.ac.uk
