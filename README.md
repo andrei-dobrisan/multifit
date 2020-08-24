@@ -35,5 +35,15 @@ The error term has two parts, an absolute value and a relative component.
 To keep errors unitless, the absolute value of error is given as a percentage from the maximum reading of a particular property like moment. 
 It is applied to all moment measurement equally. The relative error is also a percentage input and is taken as relative to how large each reading is. 
 These two types of error inputs are set to account for the two possible sources of error in  calibrating an instrument. Errors in the axis intercept (absolute) and errors in the slope of the calibration curve (relative).
+If there is no data for a property, say Shear, then the three inputs for shear should be a string like 'no'.
+The highest property in the chain cannot have 'no' as input, ie there should be data for that property. The chain can be as short as one property fitted and as long as it needs to be to accommodate more uses.
 
 Besides the experimental data to fit, multifit requires two additional parameters: the order of polynomials to use and how many it should pull from the solution space.
+
+An example of calling multifit is shown below. This is for a retaining wall problem in which data for net soil pressure, moment and wall displacement are known, but not for shear or rotation. 
+8th order polynomials are requested and 1E5 are taken from the soultion space.
+
+```
+p = (depth_pressure_meas, value_pres_meas, [err_abs_press err_rel_pres], 'no', 'no', 'no', depth_moment_meas, value_moment_meas, [err_abs_moment err_rel_moment], 'no', 'no', 'no', depth_disp_meas, value_disp_meas ./ B, [err_abs_disp err_rel_disp], 8, 1E5);
+```
+where B is bending stiffness to keep the differentiation consistent
