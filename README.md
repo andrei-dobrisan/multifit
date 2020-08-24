@@ -50,7 +50,8 @@ where B is bending stiffness to keep the differentiation consistent.
 
 If both the relative and absolute values of error are given as 0 multifit will interpret the respective value of moment, shear etc. as a hard constraint, ie all fit polynomials have to exactly go through that point.
 
-Another option is to specify that a property such as moment can only take values above or below a certain threshold between two depths. This is useful to constrain the fit polynomials to solutions that make physical sense especially if the results are osscilatory. 
+Another option is to specify that a property such as moment can only take values above or below a certain threshold between two depths. 
+This is useful to constrain the fit polynomials to solutions that make physical sense especially if the results are oscillatory. 
 If, for example, we want to constrain moment to alues higher than 0 between 2m and 4m depth we would have:
 
 ```
