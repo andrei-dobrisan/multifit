@@ -27,4 +27,9 @@ multifit('update')
 ```
 
 The multifit function was coded to accepts a varied input in a relatively straightforward format. For a retaining wall problem the function expects three inputs for each level of differentiation. I.e. three inputs for pressure, three for shear, moment, rotation, deflection..
-The first input is the depth of the measurement, the second is the value and the thirs is the error. 
+The first input is the depth of the measurement, the second is the value and the third is the error associated with that measurement. 
+It is important that measurements and depths have consistent dimensions and signs across the differentiation chain. 
+The error term has two parts, an absolute value and a relative component. 
+To keep errors unitless, the absolute value of error is given as a percentage from the maximum reading of a particular property like moment. 
+It is applied to all moment measurement equally. The relative error is also a percentage input and is taken as relative to how large each reading is. 
+These two types of error inputs are set to account for the two possible sources of error in  calibrating an instrument. Errors in the axis intercept (absolute) and errors in the slope of the calibration curve (relative)
