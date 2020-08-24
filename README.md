@@ -32,4 +32,6 @@ It is important that measurements and depths have consistent dimensions and sign
 The error term has two parts, an absolute value and a relative component. 
 To keep errors unitless, the absolute value of error is given as a percentage from the maximum reading of a particular property like moment. 
 It is applied to all moment measurement equally. The relative error is also a percentage input and is taken as relative to how large each reading is. 
-These two types of error inputs are set to account for the two possible sources of error in  calibrating an instrument. Errors in the axis intercept (absolute) and errors in the slope of the calibration curve (relative)
+These two types of error inputs are set to account for the two possible sources of error in  calibrating an instrument. Errors in the axis intercept (absolute) and errors in the slope of the calibration curve (relative).
+
+Besides the experimental data to fit, multifit requires two additional parameters: the order of polynomials to use and how many it should pull from the solution space.
