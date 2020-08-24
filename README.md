@@ -46,4 +46,15 @@ An example of calling multifit is shown below. This is for a retaining wall prob
 ```
 p = multifit(depth_pressure_meas, value_pres_meas, [err_abs_press err_rel_pres], 'no', 'no', 'no', depth_moment_meas, value_moment_meas, [err_abs_moment err_rel_moment], 'no', 'no', 'no', depth_disp_meas, value_disp_meas ./ B, [err_abs_disp err_rel_disp], 8, 1E5);
 ```
-where B is bending stiffness to keep the differentiation consistent
+where B is bending stiffness to keep the differentiation consistent.
+
+If both the relative and absolute values of error are given as 0 multifit will interpret the respective value of moment, shear etc. as a hard constraint, ie all fit polynomials have to exactly go through that point.
+
+Another option is to specify that a property such as moment can only take values above or below a certain threshold between two depths. This is useful to constrain the fit polynomials to solutions that make physical sense especially if the results are osscilatory. 
+If, for example, we want to constrain moment to alues higher than 0 between 2m and 4m depth we would have:
+
+```
+depth_moment_meas = [other_points.. 2 4]; % the depths of the interval are here
+value_moment_meas = [other_points.. 0 0]; % the threshold value is in this variable
+[err_abs_moment err_rel_moment] = [other_points; Inf Inf]; % Inf sets the inequality up as greater than, -Inf as smaller than
+```
