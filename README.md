@@ -8,14 +8,14 @@ websave('install_multifit.m', 'https://dobrisan.uk/multifit/install_multifit.m')
 
 All the command above does is fetch the required zip file for your operating system from the server (https://dobrisan.uk/multifit/), unzips it and moves the files to the top folder on your Matlab path so that the command 'multifit' is immediately accessible in Matlab.
 
-On **Windows** since there is no default C++ library installed and the code relies on C++ helper code, multifit includes the **Microsoft Visual C++ 2015-2019 Redistributable(x64)** exe for convenience. You will be prompted to install this library, but if you already have it you can close the prompt. If you do not feel comfortable installing it from multifit, just grab it straight from Microsoft's own website at: https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0.
+On **Windows** since there is no default C++ library installed and the code relies on C++ helper code, multifit includes the **Microsoft Visual C++ 2015-2019 Redistributable(x64)** .exe for convenience. You will be prompted to install this library, but if you already have it you can close the prompt. If you do not feel comfortable installing it from multifit, just grab it straight from Microsoft's own website at: https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0.
 
 If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from the above URL and unpack them to a Matlab readable folder of your choice.
-Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://dobrisan.uk/multifit/.
+Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://dobrisan.uk/multifit/current/.
 
 The code was compiled to work on Windows, Mac and Linux and tested with a number of recent versions of Matlab (2015a, 2017a, 2017b, 2019b, 2020a). 
 On Windows it was tested on Windows 7 and 10, on Mac on MacOS Catalina (10.15) and on Linux on Ubuntu 18.04, 20.04 and Fedora 31. 
-If you encounter issues with the code please let us know at andrei@dobrisan.uk.
+If you encounter issues with the code please let us know at multifit(at)dobrisan.uk .
 
 To test the library and familiarise yourself with the syntax it is **recommended** that you download and run the worked example below, based on retaining wall data published in Li and Lehane (2010):
 
@@ -69,7 +69,7 @@ multifit('update')
 ```
 
 The brief summary above is intended for expansion in the near future as the method is further developed.
-For any help please contact us at ad622@eng.cam.ac.uk
+For any help please contact us at multifit(at)dobrisan.uk.
 
 
 Li, A., Lehane, B., 2010. Embedded cantilever retaining walls in sand. Geotechnique 60, 813–823. https://doi.org/10.1680/geot.8.P.147.
