@@ -70,4 +70,4 @@ The brief summary above is intended for expansion in the near future as the meth
 For any help please contact us at ad622@eng.cam.ac.uk
 
 
-Li, A., Lehane, B., 2010. Embedded cantilever retaining walls in sand. Geotechnique 60, 813–823. doi:10.1680/geot.8.P.147.
+Li, A., Lehane, B., 2010. Embedded cantilever retaining walls in sand. Geotechnique 60, 813–823. https://doi.org/10.1680/geot.8.P.147.
