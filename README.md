@@ -8,6 +8,8 @@ websave('install_multifit.m', 'https://dobrisan.uk/multifit/install_multifit.m')
 
 All the command above does is fetch the required zip file for your operating system from the server (https://dobrisan.uk/multifit/), unzips it and moves the files to the top folder on your Matlab path so that the command 'multifit' is immediately accessible in Matlab.
 
+On **Windows** since there is no default C++ library installed and the code relies on C++ helper code, multifit includes the **Microsoft Visual C++ 2015-2019 Redistributable(x64)** exe for convenience. You will be prompted to install this library, but if you already have it you can close the prompt. If you do not feel comfortable installing it from multifit, just grab it straight from Microsoft's own website at: https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0.
+
 If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from the above URL and unpack them to a Matlab readable folder of your choice.
 Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://dobrisan.uk/multifit/.
 
