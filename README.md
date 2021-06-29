@@ -25,7 +25,7 @@ in Matlab. The `which` command should return the path multifit is installed at. 
 
 On **Windows** since there is no default C++ library installed and the code relies on C++ helper code, multifit includes the **Microsoft Visual C++ 2015-2019 Redistributable(x64)** .exe for convenience. You will be prompted to install this library, but if you already have it you can close the prompt. If you do not feel comfortable installing it from multifit, just grab it straight from Microsoft's own website at: https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0.
 
-If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from the above URL and unpack them to a Matlab readable folder of your choice.
+If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from https://dobrisan.uk/multifit/current/ and unpack them to a Matlab readable folder of your choice.
 Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://dobrisan.uk/multifit/current/.
 
 The code was compiled to work on Windows, Mac and Linux and tested with a number of recent versions of Matlab (2015a, 2017a, 2017b, 2019b, 2020a). 
@@ -39,7 +39,9 @@ To test the library and familiarise yourself with the syntax it is **recommended
 ```
 https://dobrisan.uk/multifit/Li_Lehane_paper.zip
 ```
-The example also includes support code for plotting data from a multifit analysis which you can then use as a basis for your own plotting routines. Once you download the example archive, unzip it and then run the MATLAB script `multifit_analysis.m` which is found in the included **code** folder.
+The example also includes support code for plotting data from a multifit analysis which you can then use as a basis for your own plotting routines. 
+
+Once you download the example archive, unzip it and then run the MATLAB script `multifit_analysis.m` which is found in the included **code** folder. The script will take a couple of minutes to run (don't worry if you see lots of text displayed during analysis, that means the method is working fine). Once it finishes, the script will ask you to select a .mat file. You should have a single option so please select it and open it. It represents the data the script just analysed and it is just passing you now to the plotting function. At this stage figures will appear on screen. These are plots for deflection, rotation, moment, shear and net soil pressure for the retaining wall described in Li and Lehane (2010). The code also saves these figures inside the `plots` folder within a subfolder named as `order_no_poly_xxxx_DD_Month_YYYY` (as both .jpg and .pdf). You will also find in the `plots` folder a subfolder named `order_10_reference`. If the plots you've just generated are identical to the ones in the reference folder, it means multifit installed correctly and you have a working version of analysis and plotting codes.
 
 ## 4. How multifit works
 
