@@ -13,10 +13,10 @@ Named _multifit_, the routine asks the user to provide all relevant experimental
 Run the command below in Matlab to install multifit:
 
 ```
-websave('install_multifit.m', 'https://dobrisan.uk/multifit/install_multifit.m');install_multifit;
+websave('install_multifit.m', 'https://github.com/andrei-dobrisan/multifit/releases/download/1.0/install_multifit.m');install_multifit;
 ```
 
-All the command above does is fetch the required zip file for your operating system from the server (https://dobrisan.uk/multifit/), unzips it and moves the files to the top folder on your Matlab path so that the command 'multifit' is immediately accessible in Matlab. To test if multifit installed correctly run
+All the command above does is fetch the required zip file for your operating system from Github (https://github.com/andrei-dobrisan/multifit/releases), unzips it and moves the files to the top folder on your Matlab path so that the command 'multifit' is immediately accessible in Matlab. To test if multifit installed correctly run
 
 ```
 which('multifit')
@@ -25,8 +25,8 @@ in Matlab. The `which` command should return the path multifit is installed at. 
 
 On **Windows** since there is no default C++ library installed and the code relies on C++ helper code, multifit includes the **Microsoft Visual C++ 2015-2019 Redistributable(x64)** .exe for convenience. You will be prompted to install this library, but if you already have it you can close the prompt. If you do not feel comfortable installing it from multifit, just grab it straight from Microsoft's own website at: https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0.
 
-If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from https://dobrisan.uk/multifit/current/ and unpack them to a Matlab readable folder of your choice.
-Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://dobrisan.uk/multifit/current/.
+If this fails (e.g. if you do not have write permission to your top path folder) or if you want to do things differently, you can grab the archives straight from https://github.com/andrei-dobrisan/multifit/releases and unpack them to a Matlab readable folder of your choice.
+Just bear in mind that the Matlab files are supported by C++ code and multifit expects all files to be in the same directory just like in the archives at https://github.com/andrei-dobrisan/multifit/releases.
 
 The code was compiled to work on Windows, Mac and Linux and tested with a number of recent versions of Matlab (2015a, 2017a, 2017b, 2019b, 2020a). 
 On Windows it was tested on Windows 7 and 10, on Mac on MacOS Catalina (10.15) and on Linux on Ubuntu 18.04, 20.04 and Fedora 31. 
