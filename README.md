@@ -71,7 +71,7 @@ _B_ is bending stiffness to keep the differentiation consistent.
 
 The returned variable _p_ is a 1E5 by 9 matrix. Each row of _p_ represents the coefficients of an 8th order polynomial that fits the data within the given constraints. The coefficients are in the order of descending powers to keep with the way Matlab represents polynomials in its own builtin functions such as _polyfit_. 
 
-Since there are 1E5 solutions returned, statistics can be used to narrow the results to a range of probable values. This is up to the user. In the worked example from Li and Lehane (2010) at each depth only the moment values within the 20th to 80th percentile band are considered (see lines 8, 10 and 44 in `multifit_band_plot.m` from the https://dobrisan.uk/multifit/Li_Lehane_paper.zip archive).
+Since there are 1E5 solutions returned, statistics can be used to narrow the results to a range of probable values. This is up to the user. In the worked example from Li and Lehane (2010) at each depth only the moment values within the 20th to 80th percentile band are considered (see `plot_results_single_stage.m`).
 
 If both the relative and absolute values of error are given as 0 multifit will interpret the respective value of moment, shear etc. as a hard constraint, ie all fit polynomials have to exactly go through that point.
 
