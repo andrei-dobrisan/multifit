@@ -34,11 +34,8 @@ If you encounter issues with the code please let us know at: _multifit(at)dobris
 
 ## 3. Worked example 
 
-To test the library and familiarise yourself with the syntax it is **recommended** that you download and run the worked example below, based on retaining wall data published in Li and Lehane (2010):
+To test the library and familiarise yourself with the syntax it is **recommended** that you download and run the worked example, based on retaining wall data published in Li and Lehane (2010) by clicking the link: https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip.
 
-```
-https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip
-```
 The example also includes support code for plotting data from a multifit analysis which you can then use as a basis for your own plotting routines. 
 
 Once you download the example archive, unzip it and then run the MATLAB function `analysis_single_stage.m` which is found in the included **code** folder. The function takes a single input, the order of the polynomials used to fit, and it is recommended you start with order 9, i.e. run:
