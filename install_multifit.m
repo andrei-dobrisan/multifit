@@ -95,6 +95,10 @@ if isempty(str_multifit)
 			clear cur pth_folder var_pth str_vers type_vers year_vers went_ok
 		end
 
+		msg = 'Installation was successful';
+
+		disp(msg);
+
 	catch
 
 		msg = 'Installation failed. Likely you do not have write access to the top folder in your Matlab path.';
@@ -180,6 +184,10 @@ else
 		delete install_multifit.m
 		clear cur str_vers type_vers year_vers went_ok
 	end
+
+	msg = 'Installation was successful';
+
+	disp(msg);
 
 end
 
