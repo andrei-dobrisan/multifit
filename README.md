@@ -85,7 +85,7 @@ value_moment_meas = [other_points.. 0 0]; % the threshold value is in this varia
 [err_abs_moment err_rel_moment] = [other_points; Inf Inf]; % Inf sets the inequality up as greater than, -Inf as smaller than
 ```
 
-All of the above features are illustred in the worked example at [https://dobrisan.uk/multifit/Li_Lehane_paper.zip](https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip). 
+All of the above features are illustred in the worked example at https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip. 
 
 ## 5. Updates 
 
