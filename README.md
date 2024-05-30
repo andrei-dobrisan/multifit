@@ -37,11 +37,15 @@ If you encounter issues with the code please let us know at: _multifit(at)dobris
 To test the library and familiarise yourself with the syntax it is **recommended** that you download and run the worked example below, based on retaining wall data published in Li and Lehane (2010):
 
 ```
-https://dobrisan.uk/multifit/Li_Lehane_paper.zip
+https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip
 ```
 The example also includes support code for plotting data from a multifit analysis which you can then use as a basis for your own plotting routines. 
 
-Once you download the example archive, unzip it and then run the MATLAB script `multifit_analysis.m` which is found in the included **code** folder. The script will take a couple of minutes to run (don't worry if you see lots of text displayed during analysis, that means the method is working fine). Once it finishes, the script will ask you to select a .mat file. You should have a single option so please select it and open it. It represents the data the script just analysed and it is just passing you now to the plotting function. At this stage figures will appear on screen. These are plots for deflection, rotation, moment, shear and net soil pressure for the retaining wall described in Li and Lehane (2010). The code also saves these figures inside the `plots` folder within a subfolder named as `order_no_poly_xxxx_DD_Month_YYYY` (as both .jpg and .pdf). You will also find in the `plots` folder a subfolder named `order_10_reference`. If the plots you've just generated are identical to the ones in the reference folder, it means multifit installed correctly and you have a working version of analysis and plotting codes.
+Once you download the example archive, unzip it and then run the MATLAB function `analysis_single_stage.m` which is found in the included **code** folder. The function takes a single input, the order of the polynomials used to fit, and it is recommended you start with order 9, i.e. run:
+```
+analysis_single_stage(9);
+```
+The script will take a couple of minutes to run (don't worry if you see lots of text displayed during analysis, that means the method is working fine). Once it finishes, the function will save the output figure as `Results.pdf` in the plots folder within a subfolder named using the convention `order_no_poly_xxxx_DD_Month_YYYY`. The figure includes plots for deflection, rotation, moment, shear and net soil pressure for the retaining wall described in Li and Lehane (2010). You will also find in the `plots` folder reference figures. If the plots you've just generated are identical to the ones in the reference folder, it means multifit installed correctly and you have a working version of the analysis and plotting routines.
 
 ## 4. How multifit works
 
@@ -81,7 +85,7 @@ value_moment_meas = [other_points.. 0 0]; % the threshold value is in this varia
 [err_abs_moment err_rel_moment] = [other_points; Inf Inf]; % Inf sets the inequality up as greater than, -Inf as smaller than
 ```
 
-All of the above features are illustred in the worked example at https://dobrisan.uk/multifit/Li_Lehane_paper.zip. 
+All of the above features are illustred in the worked example at [https://dobrisan.uk/multifit/Li_Lehane_paper.zip](https://github.com/andrei-dobrisan/multifit/releases/download/1.0/Li.and.Lehane.2010.example.zip). 
 
 ## 5. Updates 
 
@@ -106,6 +110,8 @@ If you came across the method by reading one of the above papers and are thinkin
 For any help please contact us at: _multifit(at)dobrisan.uk_.
 
 ## 8. References
+
+Dobrisan, A., Haigh, S., Deng, C., & Ishihara, Y. (2023). Analysis of the behaviour of retaining structures through a novel data interpretation approach. Soils and Foundations, 63 (3), 101322. https://doi.org/10.1016/j.sandf.2023.101322
 
 Li, A., Lehane, B., 2010. Embedded cantilever retaining walls in sand. Geotechnique 60, 813–823. https://doi.org/10.1680/geot.8.P.147.
 
