@@ -30,7 +30,7 @@ Just bear in mind that the Matlab files are supported by C++ code and multifit e
 
 The code was compiled to work on Windows, Mac and Linux and tested with a number of recent versions of Matlab (2015a, 2017a, 2017b, 2019b, 2020a). 
 On Windows it was tested on Windows 7 and 10, on Mac on MacOS Catalina (10.15) and on Linux on Ubuntu 18.04, 20.04 and Fedora 31. 
-If you encounter issues with the code please let us know at: _multifit(at)dobrisan.uk_ .
+If you encounter issues with the code please let us know at: _andrei(at)dobrisan.uk_ .
 
 ## 3. Worked example 
 
