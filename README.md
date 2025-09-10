@@ -104,7 +104,7 @@ If you came across the method by reading one of the above papers and are thinkin
 
 ## 7. Contact
 
-For any help please contact us at: _multifit(at)dobrisan.uk_.
+For any help please contact us at: _andrei(at)dobrisan.uk_.
 
 ## 8. References
 
